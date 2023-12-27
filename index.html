@@ -14,13 +14,21 @@
             <p class="quickActive-box__name">سید‌عرفان اشرف پور</p>
 
             <div class="quickActive-box__radioBtn-box">
-                <div class="quickActive-box__radioBtn-box--items">
+                <div>
                     <label for="raidoBtn-item1">کلیه دروس وکالت</label>
-                    <div class="checkbox"></div>
+                    <input
+                        type="checkbox"
+                        name="checkBox"
+                        id="raidoBtn-item1"
+                    />
                 </div>
-                <div class="quickActive-box__radioBtn-box--items">
+                <div>
                     <label for="raidoBtn-item2">۷ درس وکالت</label>
-                    <div class="checkbox"></div>
+                    <input
+                        type="checkbox"
+                        name="checkBox"
+                        id="raidoBtn-item2"
+                    />
                 </div>
             </div>
 
@@ -79,15 +87,5 @@
 
             <button class="quickActive-box__activeBtn">فعالسازی</button>
         </div>
-
-        <script>
-            document.querySelectorAll(".checkbox").forEach((item) => {
-                item.addEventListener("click", (e) => {
-                    e.target.textContent
-                        ? (e.target.textContent = "")
-                        : (e.target.textContent = "✓");
-                });
-            });
-        </script>
     </body>
 </html>

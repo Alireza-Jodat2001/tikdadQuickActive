@@ -47,26 +47,12 @@
         margin-bottom: 10px;
         max-width: 500px;
 
-        &--items {
+        div {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 90px;
             position: relative;
-
-            div {
-                width: 40px;
-                height: 35px;
-                border: 1px solid var(--color-purple-primary);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 25px;
-                border-radius: 7px;
-                cursor: default;
-                position: absolute;
-                left: 75px;
-            }
 
             &:first-child {
                 margin-bottom: 6px;
@@ -82,6 +68,31 @@
             width: 60%;
         }
 
+        input {
+            width: 35px;
+            height: 35px;
+            appearance: none;
+            border: 1px solid var(--color-purple-primary);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:checked {
+                background: var(--color-purple-primary);
+            }
+
+            &:checked::after {
+                display: block;
+            }
+
+            &::after {
+                content: "\002714";
+                font-size: 22px;
+                display: none;
+                color: var(--color-white);
+            }
+        }
     }
 
     &__checkBox-container {
@@ -98,8 +109,29 @@
         }
 
         input {
-            width: 14px;
-            height: 14px;
+            width: 15px;
+            height: 15px;
+            appearance: none;
+            border: 1px solid var(--color-purple-primary);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:checked {
+                background: var(--color-purple-primary);
+            }
+
+            &:checked::after {
+                display: block;
+            }
+
+            &::after {
+                content: "\002714";
+                font-size: 13px;
+                display: none;
+                color: var(--color-white);
+            }
         }
     }
 
