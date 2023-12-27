@@ -19,6 +19,7 @@
 .quickActive-box {
   padding: 15px 15px 50px;
   margin: 0 auto;
+  width: 90%;
   box-shadow: 0 0 10px var(--color-gray-dark); }
   @media screen and (min-width: 600px) {
     .quickActive-box {
