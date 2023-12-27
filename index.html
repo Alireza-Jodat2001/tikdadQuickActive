@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Tikdad Tabel</title>
+    </head>
+
+    <body>
+        <div class="quickActive-box">
+            <h4 class="quickActive-box__heading">فعالسازی سریع</h4>
+
+            <p class="quickActive-box__name">سید‌عرفان اشرف پور</p>
+
+            <div class="quickActive-box__radioBtn-box">
+                <div class="quickActive-box__radioBtn-box--items">
+                    <label for="raidoBtn-item1">کلیه دروس وکالت</label>
+                    <div class="checkbox"></div>
+                </div>
+                <div class="quickActive-box__radioBtn-box--items">
+                    <label for="raidoBtn-item2">۷ درس وکالت</label>
+                    <div class="checkbox"></div>
+                </div>
+            </div>
+
+            <div class="quickActive-box__checkBox-container">
+                <ul>
+                    <li>
+                        <label for="checkbox-item1">حقوق مدنی</label
+                        ><input
+                            type="checkbox"
+                            name="checkbox-items"
+                            id="checkbox-item1"
+                        />
+                    </li>
+                    <li>
+                        <label for="checkbox-item2">حقوق تجارت</label
+                        ><input
+                            type="checkbox"
+                            name="checkbox-items"
+                            id="checkbox-item2"
+                        />
+                    </li>
+                    <li>
+                        <label for="checkbox-item3">آیین دادرسی کیفری</label
+                        ><input
+                            type="checkbox"
+                            name="checkbox-items"
+                            id="checkbox-item3"
+                        />
+                    </li>
+                    <li>
+                        <label for="checkbox-item4">آیین دادرسی مدنی</label
+                        ><input
+                            type="checkbox"
+                            name="checkbox-items"
+                            id="checkbox-item4"
+                        />
+                    </li>
+                    <li>
+                        <label for="checkbox-item5">حقوق جزای عمومی</label
+                        ><input
+                            type="checkbox"
+                            name="checkbox-items"
+                            id="checkbox-item5"
+                        />
+                    </li>
+                    <li>
+                        <label for="checkbox-item6">حقوق جزای اختصاصی</label
+                        ><input
+                            type="checkbox"
+                            name="checkbox-items"
+                            id="checkbox-item6"
+                        />
+                    </li>
+                </ul>
+            </div>
+
+            <button class="quickActive-box__activeBtn">فعالسازی</button>
+        </div>
+
+        <script>
+            document.querySelectorAll(".checkbox").forEach((item) => {
+                item.addEventListener("click", (e) => {
+                    e.target.textContent
+                        ? (e.target.textContent = "")
+                        : (e.target.textContent = "✓");
+                });
+            });
+        </script>
+    </body>
+</html>
